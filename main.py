@@ -1,3 +1,5 @@
+
+
 # This is a sample Python script.
 
 sentence = input("Please enter a sentence to encode:\n")
@@ -6,12 +8,19 @@ sentence = input("Please enter a sentence to encode:\n")
 str_length = len(sentence)
 # determines number of characters in string
 
-x = 0
-while x != str_length:
-    newCharacter = ord(sentence[x])
-    x = x + 1
-    print(newCharacter)
+digitsList = [0] * str_length
+#determines how long the list should be based on length of sentence entered.
+# Fills in all spots with 0's as placeholder
 
+x = 0
+while x < str_length:
+    newCharacter = ord(sentence[x])
+    digitsList[x] = newCharacter
+    #assigns space (known as x) in list to newly converted character
+    x = x + 1
+
+print(digitsList)
+#prints each converted letter as a list
 
 print("This projects for Hackathon")
 print("This is a project made by Dev Jijilal, Sam Elmore, Jacob Chamoun, and Ian Corbett")
