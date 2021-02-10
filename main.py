@@ -19,16 +19,16 @@ while x < str_length:
     #assigns space (known as x) in list to newly converted character
     x = x + 1
 
-
+print("digits from original sentence converted to ASCII:")
 print(*digitsList, sep='')
 #prints sentence as code
 
 encodedList = digitsList
-
 a = 0
 while a < str_length:
     encodedList[a] = encodedList[a] * 3 + 34
     a = a + 1
+#sample encoding process, multiplies numbers by 3 and adds 34
 
 print("Encoded sentence:")
 print(encodedList)
