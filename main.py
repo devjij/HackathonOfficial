@@ -1,13 +1,19 @@
 # This is a sample Python script.
 
-sentence = input("Please enter a sentence to decode:\n")
+sentence = input("Please enter a sentence to encode:\n")
+# asks for sentence and sets input equal to variable sentence
 
 str_length = len(sentence)
+# determines number of characters in string
 
 x = 0
-while x <= str_length - 1:
-    print(ord(sentence[x]))
+while x != str_length:
+    newCharacter = ord(sentence[x])
     x = x + 1
+    codedSentence = ("Your sentence has been encoded: " )
+
+print(codedSentence)
 
 print("This projects for Hackathon")
-print("This is a project made by Dev, Sam and Jacob.")
+print("This is a project made by Dev Jijilal, Sam Elmore, Jacob Chamoun, and Ian Corbett")
+
