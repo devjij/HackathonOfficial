@@ -15,13 +15,24 @@ digitsList = [0] * str_length
 x = 0
 while x < str_length:
     newCharacter = ord(sentence[x])
-    digitsList[x] = newCharacter
+    digitsList[x] = int(newCharacter)
     #assigns space (known as x) in list to newly converted character
     x = x + 1
+
 
 print(*digitsList, sep='')
 #prints sentence as code
 
-print("This projects for Hackathon")
-print("This is a project made by Dev Jijilal, Sam Elmore, Jacob Chamoun, and Ian Corbett")
+encodedList = digitsList
+
+a = 0
+while a < str_length:
+    encodedList[a] = encodedList[a] * 3 + 34
+    a = a + 1
+
+print("Encoded sentence:")
+print(encodedList)
+
+print("Encoded sentence without spaces:")
+print(*encodedList, sep='')
 
