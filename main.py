@@ -10,9 +10,8 @@ x = 0
 while x != str_length:
     newCharacter = ord(sentence[x])
     x = x + 1
-    codedSentence = ("Your sentence has been encoded: " )
+    print(newCharacter)
 
-print(codedSentence)
 
 print("This projects for Hackathon")
 print("This is a project made by Dev Jijilal, Sam Elmore, Jacob Chamoun, and Ian Corbett")
