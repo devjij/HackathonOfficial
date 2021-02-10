@@ -19,8 +19,8 @@ while x < str_length:
     #assigns space (known as x) in list to newly converted character
     x = x + 1
 
-print(digitsList)
-#prints each converted letter as a list
+print(*digitsList, sep='')
+#prints sentence as code
 
 print("This projects for Hackathon")
 print("This is a project made by Dev Jijilal, Sam Elmore, Jacob Chamoun, and Ian Corbett")
