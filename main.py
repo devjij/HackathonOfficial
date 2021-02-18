@@ -20,7 +20,7 @@ while x < str_length:
     x = x + 1
 
 print("digits from original sentence converted to ASCII:")
-print(*digitsList, sep='')
+print(*digitsList, sep='123562547')
 #prints sentence as code
 
 encodedList = digitsList
@@ -34,5 +34,5 @@ print("Encoded sentence:")
 print(encodedList)
 
 print("Encoded sentence without spaces:")
-print(*encodedList, sep='')
+print(*encodedList, sep='123562547')
 
